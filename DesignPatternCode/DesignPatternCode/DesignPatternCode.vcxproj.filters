@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="结构型模式">
+      <UniqueIdentifier>{8817d366-fe12-4670-8143-0e5c3037317f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="创建型模式">
+      <UniqueIdentifier>{8da72c62-6f0d-459e-81d6-c406b0f2d5d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="行为模型">
+      <UniqueIdentifier>{0629e131-eb16-4018-81bc-121c259a390c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="创建型模式\Factory模式">
+      <UniqueIdentifier>{85713376-db6f-4429-8a44-fe27bb452294}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Product.h">
+      <Filter>创建型模式\Factory模式</Filter>
+    </ClInclude>
+    <ClInclude Include="Factory.h">
+      <Filter>创建型模式\Factory模式</Filter>
+    </ClInclude>
+    <ClInclude Include="ConcreteProduct.h">
+      <Filter>创建型模式\Factory模式</Filter>
+    </ClInclude>
+    <ClInclude Include="ConcreteFactory.h">
+      <Filter>创建型模式\Factory模式</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+</Project>
