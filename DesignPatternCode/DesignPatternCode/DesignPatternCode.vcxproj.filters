@@ -20,6 +20,9 @@
     <Filter Include="结构型模式\Bridge模式">
       <UniqueIdentifier>{6760f250-698c-4ac7-8776-4a3096f9e964}</UniqueIdentifier>
     </Filter>
+    <Filter Include="行为模型\Template模式">
+      <UniqueIdentifier>{9fa1a51a-7336-4cf4-a11d-ef30a3790b4a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Product.h">
@@ -48,6 +51,15 @@
     </ClInclude>
     <ClInclude Include="RefinedAbstraction.h">
       <Filter>结构型模式\Bridge模式</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractClass.h">
+      <Filter>行为模型\Template模式</Filter>
+    </ClInclude>
+    <ClInclude Include="ConcreteClass1.h">
+      <Filter>行为模型\Template模式</Filter>
+    </ClInclude>
+    <ClInclude Include="ConcreteClass2.h">
+      <Filter>行为模型\Template模式</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

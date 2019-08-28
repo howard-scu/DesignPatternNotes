@@ -24,8 +24,21 @@ void test_bridge()
 	abs->Operation();
 }
 
+#include "AbstractClass.h"
+#include "ConcreteClass1.h"
+#include "ConcreteClass2.h"
+
+void test_template()
+{
+	AbstractClass* p1 = new ConcreteClass1();
+	p1->TemplateMethod();
+
+	AbstractClass* p2 = new ConcreteClass2();
+	p2->TemplateMethod();
+}
+
 void main()
 {
-	test_bridge();
+	test_template();
 	system("pause");
 }

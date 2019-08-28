@@ -115,15 +115,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="AbstractClass.h" />
     <ClInclude Include="Abstraction.h" />
     <ClInclude Include="AbstractionImp.h" />
     <ClInclude Include="ConcreteAbstractionImpA.h" />
     <ClInclude Include="ConcreteAbstractionImpB.h" />
+    <ClInclude Include="ConcreteClass1.h" />
     <ClInclude Include="Factory.h" />
     <ClInclude Include="Product.h" />
     <ClInclude Include="ConcreteProduct.h" />
     <ClInclude Include="ConcreteFactory.h" />
     <ClInclude Include="RefinedAbstraction.h" />
+    <ClInclude Include="ConcreteClass2.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
