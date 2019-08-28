@@ -17,6 +17,9 @@
     <Filter Include="创建型模式\Factory模式">
       <UniqueIdentifier>{85713376-db6f-4429-8a44-fe27bb452294}</UniqueIdentifier>
     </Filter>
+    <Filter Include="结构型模式\Bridge模式">
+      <UniqueIdentifier>{6760f250-698c-4ac7-8776-4a3096f9e964}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Product.h">
@@ -30,6 +33,21 @@
     </ClInclude>
     <ClInclude Include="ConcreteFactory.h">
       <Filter>创建型模式\Factory模式</Filter>
+    </ClInclude>
+    <ClInclude Include="Abstraction.h">
+      <Filter>结构型模式\Bridge模式</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractionImp.h">
+      <Filter>结构型模式\Bridge模式</Filter>
+    </ClInclude>
+    <ClInclude Include="ConcreteAbstractionImpA.h">
+      <Filter>结构型模式\Bridge模式</Filter>
+    </ClInclude>
+    <ClInclude Include="ConcreteAbstractionImpB.h">
+      <Filter>结构型模式\Bridge模式</Filter>
+    </ClInclude>
+    <ClInclude Include="RefinedAbstraction.h">
+      <Filter>结构型模式\Bridge模式</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

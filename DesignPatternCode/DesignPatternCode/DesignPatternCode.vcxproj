@@ -115,10 +115,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Abstraction.h" />
+    <ClInclude Include="AbstractionImp.h" />
+    <ClInclude Include="ConcreteAbstractionImpA.h" />
+    <ClInclude Include="ConcreteAbstractionImpB.h" />
     <ClInclude Include="Factory.h" />
     <ClInclude Include="Product.h" />
     <ClInclude Include="ConcreteProduct.h" />
     <ClInclude Include="ConcreteFactory.h" />
+    <ClInclude Include="RefinedAbstraction.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
