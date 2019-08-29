@@ -1,5 +1,5 @@
-#include "ConcreteFactory.h"
-#include "Product.h"
+#include "factory\ConcreteFactory.h"
+#include "factory\Product.h"
 
 void test_factory()
 {
@@ -9,10 +9,10 @@ void test_factory()
 	delete product;
 }
 
-#include "Abstraction.h"
-#include "AbstractionImp.h"
-#include "ConcreteAbstractionImpA.h"
-#include "RefinedAbstraction.h"
+#include "bridge\Abstraction.h"
+#include "bridge\AbstractionImp.h"
+#include "bridge\ConcreteAbstractionImpA.h"
+#include "bridge\RefinedAbstraction.h"
 
 #include <iostream>
 using namespace std;
@@ -24,9 +24,9 @@ void test_bridge()
 	abs->Operation();
 }
 
-#include "AbstractClass.h"
-#include "ConcreteClass1.h"
-#include "ConcreteClass2.h"
+#include "template\AbstractClass.h"
+#include "template\ConcreteClass1.h"
+#include "template\ConcreteClass2.h"
 
 void test_template()
 {
@@ -37,24 +37,41 @@ void test_template()
 	p2->TemplateMethod();
 }
 
-#include "Strategy.h"
-#include "Context.h"
-#include "ConcreteStrategyA.h"
-#include "ConcreteStrategyB.h"
+//#include "strategy\Strategy.h"
+//#include "strategy\Context.h"
+//#include "strategy\ConcreteStrategyA.h"
+//#include "strategy\ConcreteStrategyB.h"
+//
+//void test_strategy()
+//{
+//	Strategy* ps = new ConcreteStrategyA();
+//	Context*  pc = new Context(ps);
+//	pc->DoAction();
+//	if (NULL != pc)
+//		delete pc;
+//}
 
-void test_strategy()
+
+#include "state\Context.h"
+#include "state\State.h"
+
+
+void test_state()
 {
-	Strategy* ps = new ConcreteStrategyA();
-	Context*  pc = new Context(ps);
-	pc->DoAction();
-	if (NULL != pc)
-		delete pc;
+	State* st = new ConcreteStateA();
+	Context* con = new Context(st);
+	con->OperationChangeState();
+	con->OperationChangeState();
+	con->OperationChangeState();
+
+	if (con != NULL)
+		delete con;
+	if (st != NULL)
+		st = NULL;
 }
-
-
-
 
 void main()
 {
+	test_state();
 	system("pause");
 }

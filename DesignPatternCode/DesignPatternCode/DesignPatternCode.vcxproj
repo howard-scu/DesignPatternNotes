@@ -115,25 +115,29 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="AbstractClass.h" />
-    <ClInclude Include="Abstraction.h" />
-    <ClInclude Include="AbstractionImp.h" />
-    <ClInclude Include="ConcreteAbstractionImpA.h" />
-    <ClInclude Include="ConcreteAbstractionImpB.h" />
-    <ClInclude Include="ConcreteClass1.h" />
-    <ClInclude Include="ConcreteStrategyA.h" />
-    <ClInclude Include="ConcreteStrategyB.h" />
-    <ClInclude Include="Context.h" />
-    <ClInclude Include="Factory.h" />
-    <ClInclude Include="Product.h" />
-    <ClInclude Include="ConcreteProduct.h" />
-    <ClInclude Include="ConcreteFactory.h" />
-    <ClInclude Include="RefinedAbstraction.h" />
-    <ClInclude Include="ConcreteClass2.h" />
-    <ClInclude Include="Strategy.h" />
+    <ClInclude Include="bridge\Abstraction.h" />
+    <ClInclude Include="bridge\AbstractionImp.h" />
+    <ClInclude Include="bridge\ConcreteAbstractionImpA.h" />
+    <ClInclude Include="bridge\ConcreteAbstractionImpB.h" />
+    <ClInclude Include="bridge\RefinedAbstraction.h" />
+    <ClInclude Include="factory\ConcreteFactory.h" />
+    <ClInclude Include="factory\ConcreteProduct.h" />
+    <ClInclude Include="factory\Factory.h" />
+    <ClInclude Include="factory\Product.h" />
+    <ClInclude Include="state\Context.h" />
+    <ClInclude Include="state\State.h" />
+    <ClInclude Include="strategy\ConcreteStrategyA.h" />
+    <ClInclude Include="strategy\ConcreteStrategyB.h" />
+    <ClInclude Include="strategy\Context.h" />
+    <ClInclude Include="strategy\Strategy.h" />
+    <ClInclude Include="template\AbstractClass.h" />
+    <ClInclude Include="template\ConcreteClass1.h" />
+    <ClInclude Include="template\ConcreteClass2.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="state\Context.cpp" />
+    <ClCompile Include="state\State.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

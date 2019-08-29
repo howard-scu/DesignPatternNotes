@@ -26,58 +26,73 @@
     <Filter Include="结构型模式\Strategy模式">
       <UniqueIdentifier>{6fc6cb6d-14a7-4455-a4e2-08a2e76e6670}</UniqueIdentifier>
     </Filter>
+    <Filter Include="结构型模式\State模式">
+      <UniqueIdentifier>{0df64283-5ef4-4d72-b2be-5de49c10f184}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Product.h">
+    <ClInclude Include="factory\ConcreteFactory.h">
       <Filter>创建型模式\Factory模式</Filter>
     </ClInclude>
-    <ClInclude Include="Factory.h">
+    <ClInclude Include="factory\ConcreteProduct.h">
       <Filter>创建型模式\Factory模式</Filter>
     </ClInclude>
-    <ClInclude Include="ConcreteProduct.h">
+    <ClInclude Include="factory\Factory.h">
       <Filter>创建型模式\Factory模式</Filter>
     </ClInclude>
-    <ClInclude Include="ConcreteFactory.h">
+    <ClInclude Include="factory\Product.h">
       <Filter>创建型模式\Factory模式</Filter>
     </ClInclude>
-    <ClInclude Include="Abstraction.h">
-      <Filter>结构型模式\Bridge模式</Filter>
-    </ClInclude>
-    <ClInclude Include="AbstractionImp.h">
-      <Filter>结构型模式\Bridge模式</Filter>
-    </ClInclude>
-    <ClInclude Include="ConcreteAbstractionImpA.h">
-      <Filter>结构型模式\Bridge模式</Filter>
-    </ClInclude>
-    <ClInclude Include="ConcreteAbstractionImpB.h">
-      <Filter>结构型模式\Bridge模式</Filter>
-    </ClInclude>
-    <ClInclude Include="RefinedAbstraction.h">
-      <Filter>结构型模式\Bridge模式</Filter>
-    </ClInclude>
-    <ClInclude Include="AbstractClass.h">
+    <ClInclude Include="template\AbstractClass.h">
       <Filter>行为模型\Template模式</Filter>
     </ClInclude>
-    <ClInclude Include="ConcreteClass1.h">
+    <ClInclude Include="template\ConcreteClass1.h">
       <Filter>行为模型\Template模式</Filter>
     </ClInclude>
-    <ClInclude Include="ConcreteClass2.h">
+    <ClInclude Include="template\ConcreteClass2.h">
       <Filter>行为模型\Template模式</Filter>
     </ClInclude>
-    <ClInclude Include="Strategy.h">
+    <ClInclude Include="bridge\Abstraction.h">
+      <Filter>结构型模式\Bridge模式</Filter>
+    </ClInclude>
+    <ClInclude Include="bridge\AbstractionImp.h">
+      <Filter>结构型模式\Bridge模式</Filter>
+    </ClInclude>
+    <ClInclude Include="bridge\ConcreteAbstractionImpA.h">
+      <Filter>结构型模式\Bridge模式</Filter>
+    </ClInclude>
+    <ClInclude Include="bridge\ConcreteAbstractionImpB.h">
+      <Filter>结构型模式\Bridge模式</Filter>
+    </ClInclude>
+    <ClInclude Include="bridge\RefinedAbstraction.h">
+      <Filter>结构型模式\Bridge模式</Filter>
+    </ClInclude>
+    <ClInclude Include="strategy\ConcreteStrategyA.h">
       <Filter>结构型模式\Strategy模式</Filter>
     </ClInclude>
-    <ClInclude Include="ConcreteStrategyA.h">
+    <ClInclude Include="strategy\ConcreteStrategyB.h">
       <Filter>结构型模式\Strategy模式</Filter>
     </ClInclude>
-    <ClInclude Include="ConcreteStrategyB.h">
+    <ClInclude Include="strategy\Context.h">
       <Filter>结构型模式\Strategy模式</Filter>
     </ClInclude>
-    <ClInclude Include="Context.h">
+    <ClInclude Include="strategy\Strategy.h">
       <Filter>结构型模式\Strategy模式</Filter>
+    </ClInclude>
+    <ClInclude Include="state\State.h">
+      <Filter>结构型模式\State模式</Filter>
+    </ClInclude>
+    <ClInclude Include="state\Context.h">
+      <Filter>结构型模式\State模式</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="state\State.cpp">
+      <Filter>结构型模式\State模式</Filter>
+    </ClCompile>
+    <ClCompile Include="state\Context.cpp">
+      <Filter>结构型模式\State模式</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
