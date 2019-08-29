@@ -37,8 +37,24 @@ void test_template()
 	p2->TemplateMethod();
 }
 
+#include "Strategy.h"
+#include "Context.h"
+#include "ConcreteStrategyA.h"
+#include "ConcreteStrategyB.h"
+
+void test_strategy()
+{
+	Strategy* ps = new ConcreteStrategyA();
+	Context*  pc = new Context(ps);
+	pc->DoAction();
+	if (NULL != pc)
+		delete pc;
+}
+
+
+
+
 void main()
 {
-	test_template();
 	system("pause");
 }

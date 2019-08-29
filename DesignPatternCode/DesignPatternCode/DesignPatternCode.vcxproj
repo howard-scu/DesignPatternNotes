@@ -121,12 +121,16 @@
     <ClInclude Include="ConcreteAbstractionImpA.h" />
     <ClInclude Include="ConcreteAbstractionImpB.h" />
     <ClInclude Include="ConcreteClass1.h" />
+    <ClInclude Include="ConcreteStrategyA.h" />
+    <ClInclude Include="ConcreteStrategyB.h" />
+    <ClInclude Include="Context.h" />
     <ClInclude Include="Factory.h" />
     <ClInclude Include="Product.h" />
     <ClInclude Include="ConcreteProduct.h" />
     <ClInclude Include="ConcreteFactory.h" />
     <ClInclude Include="RefinedAbstraction.h" />
     <ClInclude Include="ConcreteClass2.h" />
+    <ClInclude Include="Strategy.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />

@@ -23,6 +23,9 @@
     <Filter Include="行为模型\Template模式">
       <UniqueIdentifier>{9fa1a51a-7336-4cf4-a11d-ef30a3790b4a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="结构型模式\Strategy模式">
+      <UniqueIdentifier>{6fc6cb6d-14a7-4455-a4e2-08a2e76e6670}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Product.h">
@@ -60,6 +63,18 @@
     </ClInclude>
     <ClInclude Include="ConcreteClass2.h">
       <Filter>行为模型\Template模式</Filter>
+    </ClInclude>
+    <ClInclude Include="Strategy.h">
+      <Filter>结构型模式\Strategy模式</Filter>
+    </ClInclude>
+    <ClInclude Include="ConcreteStrategyA.h">
+      <Filter>结构型模式\Strategy模式</Filter>
+    </ClInclude>
+    <ClInclude Include="ConcreteStrategyB.h">
+      <Filter>结构型模式\Strategy模式</Filter>
+    </ClInclude>
+    <ClInclude Include="Context.h">
+      <Filter>结构型模式\Strategy模式</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
