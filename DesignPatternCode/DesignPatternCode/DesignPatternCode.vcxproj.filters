@@ -29,6 +29,9 @@
     <Filter Include="结构型模式\State模式">
       <UniqueIdentifier>{0df64283-5ef4-4d72-b2be-5de49c10f184}</UniqueIdentifier>
     </Filter>
+    <Filter Include="结构型模式\Observer模式">
+      <UniqueIdentifier>{ca649e8e-96a7-4430-b420-9fb42bfc5aa3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="factory\ConcreteFactory.h">
@@ -85,6 +88,12 @@
     <ClInclude Include="state\Context.h">
       <Filter>结构型模式\State模式</Filter>
     </ClInclude>
+    <ClInclude Include="observer\Observer.h">
+      <Filter>结构型模式\Observer模式</Filter>
+    </ClInclude>
+    <ClInclude Include="observer\Subject.h">
+      <Filter>结构型模式\Observer模式</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -93,6 +102,12 @@
     </ClCompile>
     <ClCompile Include="state\Context.cpp">
       <Filter>结构型模式\State模式</Filter>
+    </ClCompile>
+    <ClCompile Include="observer\Observer.cpp">
+      <Filter>结构型模式\Observer模式</Filter>
+    </ClCompile>
+    <ClCompile Include="observer\Subject.cpp">
+      <Filter>结构型模式\Observer模式</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

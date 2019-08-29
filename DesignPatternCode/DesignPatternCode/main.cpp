@@ -1,3 +1,4 @@
+#ifdef TEST
 #include "factory\ConcreteFactory.h"
 #include "factory\Product.h"
 
@@ -37,24 +38,23 @@ void test_template()
 	p2->TemplateMethod();
 }
 
-//#include "strategy\Strategy.h"
-//#include "strategy\Context.h"
-//#include "strategy\ConcreteStrategyA.h"
-//#include "strategy\ConcreteStrategyB.h"
-//
-//void test_strategy()
-//{
-//	Strategy* ps = new ConcreteStrategyA();
-//	Context*  pc = new Context(ps);
-//	pc->DoAction();
-//	if (NULL != pc)
-//		delete pc;
-//}
+#include "strategy\Strategy.h"
+#include "strategy\Context.h"
+#include "strategy\ConcreteStrategyA.h"
+#include "strategy\ConcreteStrategyB.h"
+
+void test_strategy()
+{
+	Strategy* ps = new ConcreteStrategyA();
+	Context*  pc = new Context(ps);
+	pc->DoAction();
+	if (NULL != pc)
+		delete pc;
+}
 
 
 #include "state\Context.h"
 #include "state\State.h"
-
 
 void test_state()
 {
@@ -70,8 +70,33 @@ void test_state()
 		st = NULL;
 }
 
+#else
+
+#include "observer/Observer.h"
+#include "observer/Subject.h"
+
+void test_observer()
+{
+	ConcreteSubject* sub = new ConcreteSubject();
+	
+	Observer* o1 = new ConcreteObserverA(sub);
+	Observer* o2 = new ConcreteObserverB(sub);
+	
+	sub->SetState("old");
+	sub->Notify();
+	
+	sub->SetState("new");
+	sub->Notify();
+}
+
 void main()
 {
-	test_state();
+	test_observer();
 	system("pause");
 }
+
+#endif // TEST
+
+
+
+

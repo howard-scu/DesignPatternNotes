@@ -124,6 +124,8 @@
     <ClInclude Include="factory\ConcreteProduct.h" />
     <ClInclude Include="factory\Factory.h" />
     <ClInclude Include="factory\Product.h" />
+    <ClInclude Include="observer\Observer.h" />
+    <ClInclude Include="observer\Subject.h" />
     <ClInclude Include="state\Context.h" />
     <ClInclude Include="state\State.h" />
     <ClInclude Include="strategy\ConcreteStrategyA.h" />
@@ -136,6 +138,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="observer\Observer.cpp" />
+    <ClCompile Include="observer\Subject.cpp" />
     <ClCompile Include="state\Context.cpp" />
     <ClCompile Include="state\State.cpp" />
   </ItemGroup>
