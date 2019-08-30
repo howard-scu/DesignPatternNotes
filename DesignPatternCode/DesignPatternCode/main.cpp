@@ -70,28 +70,44 @@ void test_state()
 		st = NULL;
 }
 
-#else
-
 #include "observer/Observer.h"
 #include "observer/Subject.h"
 
 void test_observer()
 {
 	ConcreteSubject* sub = new ConcreteSubject();
-	
+
 	Observer* o1 = new ConcreteObserverA(sub);
 	Observer* o2 = new ConcreteObserverB(sub);
-	
+
 	sub->SetState("old");
 	sub->Notify();
-	
+
 	sub->SetState("new");
 	sub->Notify();
 }
 
+#else
+
+#include "memento/Memento.h"
+#include "memento/Originator.h"
+
+void test_memento()
+{
+	Originator* o = new Originator();
+	o->SetState("old"); //±¸ÍüÇ°×´Ì¬
+	o->PrintState();
+
+	Memento* m = o->CreateMemento(); //½«×´Ì¬±¸Íü
+	o->SetState("new"); //ÐÞ¸Ä×´Ì¬
+	o->PrintState();
+	o->RestoreToMemento(m); //»Ö¸´ÐÞ¸ÄÇ°×´Ì¬
+	o->PrintState();
+}
+
 void main()
 {
-	test_observer();
+	test_memento();
 	system("pause");
 }
 
