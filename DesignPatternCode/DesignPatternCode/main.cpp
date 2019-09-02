@@ -104,10 +104,6 @@ void test_memento()
 	o->PrintState();
 }
 
-
-
-#else
-
 #include "abstract factory/AbstractFactory.h"
 #include "abstract factory/Product.h"
 
@@ -123,9 +119,19 @@ void test_abstract_factory()
 	factory2->CreateProductB();
 }
 
+#include "singleton/Singleton.h"
+
+void test_singleton()
+{
+	Singleton* ps1 = Singleton::Instance();
+	Singleton* ps2 = Singleton::Instance();
+}
+
+#else
+
+
 void main()
 {
-	test_abstract_factory();
 	system("pause");
 }
 

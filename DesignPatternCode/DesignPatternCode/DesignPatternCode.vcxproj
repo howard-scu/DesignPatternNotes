@@ -130,6 +130,7 @@
     <ClInclude Include="memento\Originator.h" />
     <ClInclude Include="observer\Observer.h" />
     <ClInclude Include="observer\Subject.h" />
+    <ClInclude Include="singleton\Singleton.h" />
     <ClInclude Include="state\Context.h" />
     <ClInclude Include="state\State.h" />
     <ClInclude Include="strategy\ConcreteStrategyA.h" />
@@ -148,6 +149,7 @@
     <ClCompile Include="memento\Originator.cpp" />
     <ClCompile Include="observer\Observer.cpp" />
     <ClCompile Include="observer\Subject.cpp" />
+    <ClCompile Include="singleton\Singleton.cpp" />
     <ClCompile Include="state\Context.cpp" />
     <ClCompile Include="state\State.cpp" />
   </ItemGroup>

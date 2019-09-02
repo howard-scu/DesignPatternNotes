@@ -38,6 +38,9 @@
     <Filter Include="行为模型\Strategy模式">
       <UniqueIdentifier>{6fc6cb6d-14a7-4455-a4e2-08a2e76e6670}</UniqueIdentifier>
     </Filter>
+    <Filter Include="创建型模式\Singleton模式">
+      <UniqueIdentifier>{ec8e4a99-9eae-4fb7-b534-94479b571a71}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="factory\ConcreteFactory.h">
@@ -112,6 +115,9 @@
     <ClInclude Include="abstract factory\Product.h">
       <Filter>创建型模式\AbstractFactory模式</Filter>
     </ClInclude>
+    <ClInclude Include="singleton\Singleton.h">
+      <Filter>创建型模式\Singleton模式</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -138,6 +144,9 @@
     </ClCompile>
     <ClCompile Include="abstract factory\Product.cpp">
       <Filter>创建型模式\AbstractFactory模式</Filter>
+    </ClCompile>
+    <ClCompile Include="singleton\Singleton.cpp">
+      <Filter>创建型模式\Singleton模式</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
