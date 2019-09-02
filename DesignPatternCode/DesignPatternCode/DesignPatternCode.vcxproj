@@ -115,6 +115,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="abstract factory\AbstractFactory.h" />
+    <ClInclude Include="abstract factory\Product.h" />
     <ClInclude Include="bridge\Abstraction.h" />
     <ClInclude Include="bridge\AbstractionImp.h" />
     <ClInclude Include="bridge\ConcreteAbstractionImpA.h" />
@@ -139,6 +141,8 @@
     <ClInclude Include="template\ConcreteClass2.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="abstract factory\AbstractFactory.cpp" />
+    <ClCompile Include="abstract factory\Product.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="memento\Memento.cpp" />
     <ClCompile Include="memento\Originator.cpp" />

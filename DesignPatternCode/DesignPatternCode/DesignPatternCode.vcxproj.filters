@@ -23,17 +23,20 @@
     <Filter Include="行为模型\Template模式">
       <UniqueIdentifier>{9fa1a51a-7336-4cf4-a11d-ef30a3790b4a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="结构型模式\Strategy模式">
-      <UniqueIdentifier>{6fc6cb6d-14a7-4455-a4e2-08a2e76e6670}</UniqueIdentifier>
+    <Filter Include="创建型模式\AbstractFactory模式">
+      <UniqueIdentifier>{27c2dd9e-7cf2-40d3-abb0-ebb82cefd648}</UniqueIdentifier>
     </Filter>
-    <Filter Include="结构型模式\State模式">
-      <UniqueIdentifier>{0df64283-5ef4-4d72-b2be-5de49c10f184}</UniqueIdentifier>
+    <Filter Include="行为模型\Memento模式">
+      <UniqueIdentifier>{39c6837a-34b8-4911-ac2a-6d8eaa771706}</UniqueIdentifier>
     </Filter>
-    <Filter Include="结构型模式\Observer模式">
+    <Filter Include="行为模型\Observer模式">
       <UniqueIdentifier>{ca649e8e-96a7-4430-b420-9fb42bfc5aa3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="结构型模式\Memento模式">
-      <UniqueIdentifier>{39c6837a-34b8-4911-ac2a-6d8eaa771706}</UniqueIdentifier>
+    <Filter Include="行为模型\State模式">
+      <UniqueIdentifier>{0df64283-5ef4-4d72-b2be-5de49c10f184}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="行为模型\Strategy模式">
+      <UniqueIdentifier>{6fc6cb6d-14a7-4455-a4e2-08a2e76e6670}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -74,55 +77,67 @@
       <Filter>结构型模式\Bridge模式</Filter>
     </ClInclude>
     <ClInclude Include="strategy\ConcreteStrategyA.h">
-      <Filter>结构型模式\Strategy模式</Filter>
+      <Filter>行为模型\Strategy模式</Filter>
     </ClInclude>
     <ClInclude Include="strategy\ConcreteStrategyB.h">
-      <Filter>结构型模式\Strategy模式</Filter>
+      <Filter>行为模型\Strategy模式</Filter>
     </ClInclude>
     <ClInclude Include="strategy\Context.h">
-      <Filter>结构型模式\Strategy模式</Filter>
+      <Filter>行为模型\Strategy模式</Filter>
     </ClInclude>
     <ClInclude Include="strategy\Strategy.h">
-      <Filter>结构型模式\Strategy模式</Filter>
+      <Filter>行为模型\Strategy模式</Filter>
     </ClInclude>
     <ClInclude Include="state\State.h">
-      <Filter>结构型模式\State模式</Filter>
+      <Filter>行为模型\State模式</Filter>
     </ClInclude>
     <ClInclude Include="state\Context.h">
-      <Filter>结构型模式\State模式</Filter>
+      <Filter>行为模型\State模式</Filter>
     </ClInclude>
     <ClInclude Include="observer\Observer.h">
-      <Filter>结构型模式\Observer模式</Filter>
+      <Filter>行为模型\Observer模式</Filter>
     </ClInclude>
     <ClInclude Include="observer\Subject.h">
-      <Filter>结构型模式\Observer模式</Filter>
+      <Filter>行为模型\Observer模式</Filter>
     </ClInclude>
     <ClInclude Include="memento\Memento.h">
-      <Filter>结构型模式\Memento模式</Filter>
+      <Filter>行为模型\Memento模式</Filter>
     </ClInclude>
     <ClInclude Include="memento\Originator.h">
-      <Filter>结构型模式\Memento模式</Filter>
+      <Filter>行为模型\Memento模式</Filter>
+    </ClInclude>
+    <ClInclude Include="abstract factory\AbstractFactory.h">
+      <Filter>创建型模式\AbstractFactory模式</Filter>
+    </ClInclude>
+    <ClInclude Include="abstract factory\Product.h">
+      <Filter>创建型模式\AbstractFactory模式</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="state\State.cpp">
-      <Filter>结构型模式\State模式</Filter>
+      <Filter>行为模型\State模式</Filter>
     </ClCompile>
     <ClCompile Include="state\Context.cpp">
-      <Filter>结构型模式\State模式</Filter>
+      <Filter>行为模型\State模式</Filter>
     </ClCompile>
     <ClCompile Include="observer\Observer.cpp">
-      <Filter>结构型模式\Observer模式</Filter>
+      <Filter>行为模型\Observer模式</Filter>
     </ClCompile>
     <ClCompile Include="observer\Subject.cpp">
-      <Filter>结构型模式\Observer模式</Filter>
+      <Filter>行为模型\Observer模式</Filter>
     </ClCompile>
     <ClCompile Include="memento\Memento.cpp">
-      <Filter>结构型模式\Memento模式</Filter>
+      <Filter>行为模型\Memento模式</Filter>
     </ClCompile>
     <ClCompile Include="memento\Originator.cpp">
-      <Filter>结构型模式\Memento模式</Filter>
+      <Filter>行为模型\Memento模式</Filter>
+    </ClCompile>
+    <ClCompile Include="abstract factory\AbstractFactory.cpp">
+      <Filter>创建型模式\AbstractFactory模式</Filter>
+    </ClCompile>
+    <ClCompile Include="abstract factory\Product.cpp">
+      <Filter>创建型模式\AbstractFactory模式</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

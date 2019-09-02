@@ -87,7 +87,6 @@ void test_observer()
 	sub->Notify();
 }
 
-#else
 
 #include "memento/Memento.h"
 #include "memento/Originator.h"
@@ -105,9 +104,28 @@ void test_memento()
 	o->PrintState();
 }
 
+
+
+#else
+
+#include "abstract factory/AbstractFactory.h"
+#include "abstract factory/Product.h"
+
+void test_abstract_factory()
+{
+	AbstractFactory* factory1 = new ConcreteFactory1();
+	AbstractFactory* factory2 = new ConcreteFactory2();
+
+	factory1->CreateProductA();
+	factory1->CreateProductB();
+
+	factory2->CreateProductA();
+	factory2->CreateProductB();
+}
+
 void main()
 {
-	test_memento();
+	test_abstract_factory();
 	system("pause");
 }
 
