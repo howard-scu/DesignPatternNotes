@@ -104,6 +104,16 @@ void test_memento()
 	o->PrintState();
 }
 
+
+
+#include "singleton/Singleton.h"
+
+void test_singleton()
+{
+	Singleton* ps1 = Singleton::Instance();
+	Singleton* ps2 = Singleton::Instance();
+}
+
 #include "abstract factory/AbstractFactory.h"
 #include "abstract factory/Product.h"
 
@@ -119,19 +129,21 @@ void test_abstract_factory()
 	factory2->CreateProductB();
 }
 
-#include "singleton/Singleton.h"
-
-void test_singleton()
-{
-	Singleton* ps1 = Singleton::Instance();
-	Singleton* ps2 = Singleton::Instance();
-}
-
 #else
 
+#include "builder\Builder.h"
+#include "builder\Product.h"
+#include "builder\Director.h"
+
+void test_builder()
+{
+	Director* d = new Director(new ConcreteBuilder());
+	d->Construct();
+}
 
 void main()
 {
+	test_builder();
 	system("pause");
 }
 

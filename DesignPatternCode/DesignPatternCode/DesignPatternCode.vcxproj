@@ -122,6 +122,9 @@
     <ClInclude Include="bridge\ConcreteAbstractionImpA.h" />
     <ClInclude Include="bridge\ConcreteAbstractionImpB.h" />
     <ClInclude Include="bridge\RefinedAbstraction.h" />
+    <ClInclude Include="builder\Builder.h" />
+    <ClInclude Include="builder\Director.h" />
+    <ClInclude Include="builder\Product.h" />
     <ClInclude Include="factory\ConcreteFactory.h" />
     <ClInclude Include="factory\ConcreteProduct.h" />
     <ClInclude Include="factory\Factory.h" />
@@ -143,7 +146,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="abstract factory\AbstractFactory.cpp" />
-    <ClCompile Include="abstract factory\Product.cpp" />
+    <ClCompile Include="builder\Builder.cpp" />
+    <ClCompile Include="builder\Director.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="memento\Memento.cpp" />
     <ClCompile Include="memento\Originator.cpp" />
