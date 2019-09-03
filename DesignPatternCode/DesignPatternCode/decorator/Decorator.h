@@ -7,11 +7,11 @@ using namespace std;
 class Component
 {
 public:
-	virtual ~Component();
-	virtual void Operation();
+	virtual ~Component() {}
+	virtual void Operation() {}
 
 protected:
-	Component();
+	Component() {}
 };
 
 class ConcreteComponent :public Component

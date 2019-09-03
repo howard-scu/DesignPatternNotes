@@ -1,17 +1,5 @@
 #include "Decorator.h"
 
-Component::Component()
-{
-}
-
-Component::~Component()
-{
-}
-
-void Component::Operation()
-{
-}
-
 ConcreteComponent::ConcreteComponent()
 {
 }

@@ -163,7 +163,6 @@ void test_adapter()
 #endif // !COMPOSITE
 }
 
-#else
 
 #include "decorator/Decorator.h"
 
@@ -175,10 +174,30 @@ void test_decorator()
 	component->Operation();
 }
 
+#else
+
+
+#include "composite/Component.h"
+#include "composite/Composite.h"
+#include "composite/Leaf.h"
+
+void test_composite()
+{
+	Leaf* l = new Leaf();
+	l->Operation();
+	Composite* com = new Composite();
+	com->Add(l);
+	com->Operation();
+	Component* ll = com->GetChild(0);
+	ll->Operation();
+}
+
+#include <iostream>
+using namespace std;
 
 void main()
 {
-	test_decorator();
+	test_composite();
 	system("pause");
 }
 

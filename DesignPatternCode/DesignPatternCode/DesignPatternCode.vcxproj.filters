@@ -53,6 +53,9 @@
     <Filter Include="结构型模式\Decorator模式">
       <UniqueIdentifier>{9df72a2f-d1f8-4e49-a5fe-f39d348e585e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="结构型模式\Composite模式">
+      <UniqueIdentifier>{5fd07de9-b4cb-4a04-ab0a-1d923d64118f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="factory\ConcreteFactory.h">
@@ -148,6 +151,15 @@
     <ClInclude Include="decorator\Decorator.h">
       <Filter>结构型模式\Decorator模式</Filter>
     </ClInclude>
+    <ClInclude Include="composite\Component.h">
+      <Filter>结构型模式\Composite模式</Filter>
+    </ClInclude>
+    <ClInclude Include="composite\Composite.h">
+      <Filter>结构型模式\Composite模式</Filter>
+    </ClInclude>
+    <ClInclude Include="composite\Leaf.h">
+      <Filter>结构型模式\Composite模式</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -189,6 +201,12 @@
     </ClCompile>
     <ClCompile Include="decorator\Decorator.cpp">
       <Filter>结构型模式\Decorator模式</Filter>
+    </ClCompile>
+    <ClCompile Include="composite\Composite.cpp">
+      <Filter>结构型模式\Composite模式</Filter>
+    </ClCompile>
+    <ClCompile Include="composite\Leaf.cpp">
+      <Filter>结构型模式\Composite模式</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -126,6 +126,9 @@
     <ClInclude Include="builder\Builder.h" />
     <ClInclude Include="builder\Director.h" />
     <ClInclude Include="builder\Product.h" />
+    <ClInclude Include="composite\Component.h" />
+    <ClInclude Include="composite\Composite.h" />
+    <ClInclude Include="composite\Leaf.h" />
     <ClInclude Include="decorator\Decorator.h" />
     <ClInclude Include="factory\ConcreteFactory.h" />
     <ClInclude Include="factory\ConcreteProduct.h" />
@@ -152,6 +155,8 @@
     <ClCompile Include="adapter\Adapter.cpp" />
     <ClCompile Include="builder\Builder.cpp" />
     <ClCompile Include="builder\Director.cpp" />
+    <ClCompile Include="composite\Composite.cpp" />
+    <ClCompile Include="composite\Leaf.cpp" />
     <ClCompile Include="decorator\Decorator.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="memento\Memento.cpp" />
