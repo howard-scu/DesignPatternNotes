@@ -165,8 +165,20 @@ void test_adapter()
 
 #else
 
+#include "decorator/Decorator.h"
+
+void test_decorator()
+{
+	Component* component = new ConcreteComponent();
+	Decorator* decorator = new ConcreteDecorator(component);
+	decorator->Operation();
+	component->Operation();
+}
+
+
 void main()
 {
+	test_decorator();
 	system("pause");
 }
 
