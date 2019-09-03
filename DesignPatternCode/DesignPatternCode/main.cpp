@@ -129,7 +129,6 @@ void test_abstract_factory()
 	factory2->CreateProductB();
 }
 
-#else
 
 #include "builder\Builder.h"
 #include "builder\Product.h"
@@ -141,9 +140,33 @@ void test_builder()
 	d->Construct();
 }
 
+#include "prototype/Prototype.h"
+
+void test_prototype()
+{
+	Prototype* p = new ConcretePrototype();
+	Prototype* p1 = p->Clone();
+}
+
+
+#include "adapter\Adapter.h"
+
+void test_adapter()
+{
+#ifndef COMPOSITE
+	Target* adt = new Adapter();
+	adt->Request();
+#else
+	Adaptee* ade = new Adaptee;
+	Target* adt = new Adapter(ade);
+	adt->Request();
+#endif // !COMPOSITE
+}
+
+#else
+
 void main()
 {
-	test_builder();
 	system("pause");
 }
 

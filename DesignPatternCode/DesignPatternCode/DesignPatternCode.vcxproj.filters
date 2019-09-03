@@ -44,6 +44,12 @@
     <Filter Include="创建型模式\Builder模式">
       <UniqueIdentifier>{33e6fa24-c9a3-4dc2-9ef7-61f3db655086}</UniqueIdentifier>
     </Filter>
+    <Filter Include="创建型模式\Prototype模式">
+      <UniqueIdentifier>{df345c9c-e7a0-4075-9992-1b953dcf4ea2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="结构型模式\Adapter模式">
+      <UniqueIdentifier>{8a42f3f5-d596-4dd9-bc16-4fd367f1f5b7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="factory\ConcreteFactory.h">
@@ -130,6 +136,12 @@
     <ClInclude Include="builder\Product.h">
       <Filter>创建型模式\Builder模式</Filter>
     </ClInclude>
+    <ClInclude Include="prototype\Prototype.h">
+      <Filter>创建型模式\Prototype模式</Filter>
+    </ClInclude>
+    <ClInclude Include="adapter\Adapter.h">
+      <Filter>结构型模式\Adapter模式</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -162,6 +174,12 @@
     </ClCompile>
     <ClCompile Include="builder\Director.cpp">
       <Filter>创建型模式\Builder模式</Filter>
+    </ClCompile>
+    <ClCompile Include="prototype\Prototype.cpp">
+      <Filter>创建型模式\Prototype模式</Filter>
+    </ClCompile>
+    <ClCompile Include="adapter\Adapter.cpp">
+      <Filter>结构型模式\Adapter模式</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

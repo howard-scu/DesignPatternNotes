@@ -117,6 +117,7 @@
   <ItemGroup>
     <ClInclude Include="abstract factory\AbstractFactory.h" />
     <ClInclude Include="abstract factory\Product.h" />
+    <ClInclude Include="adapter\Adapter.h" />
     <ClInclude Include="bridge\Abstraction.h" />
     <ClInclude Include="bridge\AbstractionImp.h" />
     <ClInclude Include="bridge\ConcreteAbstractionImpA.h" />
@@ -133,6 +134,7 @@
     <ClInclude Include="memento\Originator.h" />
     <ClInclude Include="observer\Observer.h" />
     <ClInclude Include="observer\Subject.h" />
+    <ClInclude Include="prototype\Prototype.h" />
     <ClInclude Include="singleton\Singleton.h" />
     <ClInclude Include="state\Context.h" />
     <ClInclude Include="state\State.h" />
@@ -146,6 +148,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="abstract factory\AbstractFactory.cpp" />
+    <ClCompile Include="adapter\Adapter.cpp" />
     <ClCompile Include="builder\Builder.cpp" />
     <ClCompile Include="builder\Director.cpp" />
     <ClCompile Include="main.cpp" />
@@ -153,6 +156,7 @@
     <ClCompile Include="memento\Originator.cpp" />
     <ClCompile Include="observer\Observer.cpp" />
     <ClCompile Include="observer\Subject.cpp" />
+    <ClCompile Include="prototype\Prototype.cpp" />
     <ClCompile Include="singleton\Singleton.cpp" />
     <ClCompile Include="state\Context.cpp" />
     <ClCompile Include="state\State.cpp" />
