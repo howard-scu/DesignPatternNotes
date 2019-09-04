@@ -134,6 +134,8 @@
     <ClInclude Include="factory\ConcreteProduct.h" />
     <ClInclude Include="factory\Factory.h" />
     <ClInclude Include="factory\Product.h" />
+    <ClInclude Include="mediator\Colleage.h" />
+    <ClInclude Include="mediator\Mediator.h" />
     <ClInclude Include="memento\Memento.h" />
     <ClInclude Include="memento\Originator.h" />
     <ClInclude Include="observer\Observer.h" />
@@ -159,6 +161,8 @@
     <ClCompile Include="composite\Leaf.cpp" />
     <ClCompile Include="decorator\Decorator.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="mediator\Colleage.cpp" />
+    <ClCompile Include="mediator\Mediator.cpp" />
     <ClCompile Include="memento\Memento.cpp" />
     <ClCompile Include="memento\Originator.cpp" />
     <ClCompile Include="observer\Observer.cpp" />

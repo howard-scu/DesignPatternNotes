@@ -174,8 +174,6 @@ void test_decorator()
 	component->Operation();
 }
 
-#else
-
 
 #include "composite/Component.h"
 #include "composite/Composite.h"
@@ -192,12 +190,40 @@ void test_composite()
 	ll->Operation();
 }
 
+
+#else
+
+
+#include "mediator/Colleage.h"
+#include "mediator/Mediator.h"
+
+void test_mediator()
+{
+	ConcreteMediator* m = new ConcreteMediator();
+	ConcreteColleageA* c1 = new ConcreteColleageA(m);
+	ConcreteColleageB* c2 = new ConcreteColleageB(m);
+	m->IntroColleage(c1, c2);
+	c1->SetState("old");
+	c2->SetState("old");
+	c1->Aciton();
+	c2->Aciton();
+	cout << endl;
+	c1->SetState("new");
+	c1->Aciton();
+	c2->Aciton();
+	cout << endl;
+	c2->SetState("old");
+	c2->Aciton();
+	c1->Aciton();
+}
+
+
 #include <iostream>
 using namespace std;
 
 void main()
 {
-	test_composite();
+	test_mediator();
 	system("pause");
 }
 

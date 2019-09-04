@@ -56,6 +56,9 @@
     <Filter Include="结构型模式\Composite模式">
       <UniqueIdentifier>{5fd07de9-b4cb-4a04-ab0a-1d923d64118f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="行为模型\Mediator模式">
+      <UniqueIdentifier>{8c94eae5-94fd-48df-a691-27474c7dcfea}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="factory\ConcreteFactory.h">
@@ -160,6 +163,12 @@
     <ClInclude Include="composite\Leaf.h">
       <Filter>结构型模式\Composite模式</Filter>
     </ClInclude>
+    <ClInclude Include="mediator\Colleage.h">
+      <Filter>行为模型\Mediator模式</Filter>
+    </ClInclude>
+    <ClInclude Include="mediator\Mediator.h">
+      <Filter>行为模型\Mediator模式</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -207,6 +216,12 @@
     </ClCompile>
     <ClCompile Include="composite\Leaf.cpp">
       <Filter>结构型模式\Composite模式</Filter>
+    </ClCompile>
+    <ClCompile Include="mediator\Colleage.cpp">
+      <Filter>行为模型\Mediator模式</Filter>
+    </ClCompile>
+    <ClCompile Include="mediator\Mediator.cpp">
+      <Filter>行为模型\Mediator模式</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
