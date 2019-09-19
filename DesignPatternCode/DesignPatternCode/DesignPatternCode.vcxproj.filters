@@ -59,6 +59,9 @@
     <Filter Include="行为模型\Mediator模式">
       <UniqueIdentifier>{8c94eae5-94fd-48df-a691-27474c7dcfea}</UniqueIdentifier>
     </Filter>
+    <Filter Include="行为模型\Command模式">
+      <UniqueIdentifier>{8a035819-b226-45c9-9f07-9d765e26f506}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="factory\ConcreteFactory.h">
@@ -169,6 +172,12 @@
     <ClInclude Include="mediator\Mediator.h">
       <Filter>行为模型\Mediator模式</Filter>
     </ClInclude>
+    <ClInclude Include="command\Command.h">
+      <Filter>行为模型\Command模式</Filter>
+    </ClInclude>
+    <ClInclude Include="command\Reciever.h">
+      <Filter>行为模型\Command模式</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -222,6 +231,12 @@
     </ClCompile>
     <ClCompile Include="mediator\Mediator.cpp">
       <Filter>行为模型\Mediator模式</Filter>
+    </ClCompile>
+    <ClCompile Include="command\Reciever.cpp">
+      <Filter>行为模型\Command模式</Filter>
+    </ClCompile>
+    <ClCompile Include="command\Command.cpp">
+      <Filter>行为模型\Command模式</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
