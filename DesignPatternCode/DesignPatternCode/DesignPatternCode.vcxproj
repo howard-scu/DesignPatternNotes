@@ -127,6 +127,7 @@
     <ClInclude Include="builder\Director.h" />
     <ClInclude Include="builder\Product.h" />
     <ClInclude Include="command\Command.h" />
+    <ClInclude Include="command\Invoker.h" />
     <ClInclude Include="command\Reciever.h" />
     <ClInclude Include="composite\Component.h" />
     <ClInclude Include="composite\Composite.h" />
@@ -160,6 +161,7 @@
     <ClCompile Include="builder\Builder.cpp" />
     <ClCompile Include="builder\Director.cpp" />
     <ClCompile Include="command\Command.cpp" />
+    <ClCompile Include="command\Invoker.cpp" />
     <ClCompile Include="command\Reciever.cpp" />
     <ClCompile Include="composite\Composite.cpp" />
     <ClCompile Include="composite\Leaf.cpp" />

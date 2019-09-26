@@ -428,17 +428,28 @@ void test_mediator()
 	c1->Aciton();
 }
 
-#else
 
 #include "command/Command.h"
 #include "command/Reciever.h"
+#include "command/Invoker.h"
 
-void test_command()
+void test_command_1()
 {
 	Reciever* rev = new Reciever();
 	Command* cmd = new	SimpleCommand<Reciever>(rev, &Reciever::Action);
 	cmd->Excute();
 }
+
+void test_command_2()
+{
+	Reciever* rev = new Reciever();
+	Command* cmd = new ConcreteCommand(rev);
+	Invoker* inv = new Invoker(cmd);
+	inv->Invoke();
+}
+
+#else
+
 
 
 #include <iostream> 
@@ -446,7 +457,7 @@ using namespace std;
 
 void main()
 {
-	test_command();
+
 	system("pause");
 }
 

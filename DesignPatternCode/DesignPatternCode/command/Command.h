@@ -41,4 +41,16 @@ private:
 	Reciever * _rev;
 	Action		_act;
 };
+
+
+class ConcreteCommand :public Command
+{
+public:
+	ConcreteCommand(Reciever* rev);
+	~ConcreteCommand();
+	void Excute();
+
+private:
+	Reciever * _rev;
+};
 #endif //~_COMMAND_H
