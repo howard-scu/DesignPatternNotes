@@ -154,6 +154,8 @@
     <ClInclude Include="template\AbstractClass.h" />
     <ClInclude Include="template\ConcreteClass1.h" />
     <ClInclude Include="template\ConcreteClass2.h" />
+    <ClInclude Include="visitor\Element.h" />
+    <ClInclude Include="visitor\Visitor.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="abstract factory\AbstractFactory.cpp" />
@@ -177,6 +179,8 @@
     <ClCompile Include="singleton\Singleton.cpp" />
     <ClCompile Include="state\Context.cpp" />
     <ClCompile Include="state\State.cpp" />
+    <ClCompile Include="visitor\Element.cpp" />
+    <ClCompile Include="visitor\Visitor.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

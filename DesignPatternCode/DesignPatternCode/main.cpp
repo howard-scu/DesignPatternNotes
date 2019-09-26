@@ -451,13 +451,23 @@ void test_command_2()
 #else
 
 
+#include "visitor/Element.h"
+#include "visitor/Visitor.h"
+
+void test_visitor()
+{
+	Visitor* vis = new ConcreteVisitorA();
+	Element* elm = new ConcreteElementA();
+	elm->Accept(vis);
+}
+
 
 #include <iostream> 
 using namespace std;
 
 void main()
 {
-
+	test_visitor();
 	system("pause");
 }
 
