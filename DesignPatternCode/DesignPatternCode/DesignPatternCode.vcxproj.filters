@@ -65,6 +65,9 @@
     <Filter Include="行为模型\Visitor模式">
       <UniqueIdentifier>{749530fe-a8b0-42e4-b8a0-e3a4fa227eb2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="行为模型\Chain模式">
+      <UniqueIdentifier>{e8cd0727-cc3e-446b-814e-15afffbb673e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="factory\ConcreteFactory.h">
@@ -190,6 +193,9 @@
     <ClInclude Include="visitor\Visitor.h">
       <Filter>行为模型\Visitor模式</Filter>
     </ClInclude>
+    <ClInclude Include="chain\Handle.h">
+      <Filter>行为模型\Chain模式</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -258,6 +264,9 @@
     </ClCompile>
     <ClCompile Include="visitor\Visitor.cpp">
       <Filter>行为模型\Visitor模式</Filter>
+    </ClCompile>
+    <ClCompile Include="chain\Handle.cpp">
+      <Filter>行为模型\Chain模式</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

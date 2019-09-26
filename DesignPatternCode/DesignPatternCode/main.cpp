@@ -448,9 +448,6 @@ void test_command_2()
 	inv->Invoke();
 }
 
-#else
-
-
 #include "visitor/Element.h"
 #include "visitor/Visitor.h"
 
@@ -461,13 +458,24 @@ void test_visitor()
 	elm->Accept(vis);
 }
 
+#else
+
+#include "chain/Handle.h"
+
+void test_chain()
+{
+	Handle* h1 = new ConcreteHandleA();
+	Handle* h2 = new ConcreteHandleB();
+	h1->SetSuccessor(h2);
+	h1->HandleRequest();
+}
 
 #include <iostream> 
 using namespace std;
 
 void main()
 {
-	test_visitor();
+	test_chain();
 	system("pause");
 }
 
